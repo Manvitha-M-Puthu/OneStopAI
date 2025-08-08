@@ -10,11 +10,9 @@ Certainly! Here’s your detailed README for the OneStopAI project, professional
 
 ## 🖼️ Screenshots
 
-
-Add screenshots here to showcase your platform’s UI/UX.
-[<img width="1895" height="913" alt="image" src="https://github.com/user-attachments/assets/54adf98e-e457-42d5-a91a-c4b324a23817" />]
-[<img width="1878" height="913" alt="image" src="https://github.com/user-attachments/assets/e919e157-f727-4594-b7b2-9daaa8882c89" />]
-[<img width="1890" height="914" alt="image" src="https://github.com/user-attachments/assets/01d3198a-6c87-44f1-8ac6-79af00f6109d" />]
+<img width="1895" height="913" alt="image" src="https://github.com/user-attachments/assets/54adf98e-e457-42d5-a91a-c4b324a23817" />
+<img width="1878" height="913" alt="image" src="https://github.com/user-attachments/assets/e919e157-f727-4594-b7b2-9daaa8882c89" />
+<img width="1890" height="914" alt="image" src="https://github.com/user-attachments/assets/01d3198a-6c87-44f1-8ac6-79af00f6109d" />
 
 
 # Table of Contents
