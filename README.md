@@ -12,10 +12,10 @@ Certainly! Here’s your detailed README for the OneStopAI project, professional
 
 
 Add screenshots here to showcase your platform’s UI/UX.
+[<img width="1895" height="913" alt="image" src="https://github.com/user-attachments/assets/54adf98e-e457-42d5-a91a-c4b324a23817" />]
+[<img width="1878" height="913" alt="image" src="https://github.com/user-attachments/assets/e919e157-f727-4594-b7b2-9daaa8882c89" />]
+[<img width="1890" height="914" alt="image" src="https://github.com/user-attachments/assets/01d3198a-6c87-44f1-8ac6-79af00f6109d" />]
 
-Example:
-![<img width="1878" height="913" alt="image" src="https://github.com/user-attachments/assets/e919e157-f727-4594-b7b2-9daaa8882c89" />
-](path/to/dashboard
 
 # Table of Contents
 
@@ -35,7 +35,7 @@ Example:
 
 ## 🚀 Features
 
-- **Centralized AI Hub:** One-stop access to capabilities like text generation, image analysis, summarization, chatbots, and more.
+- **Centralized AI Hub:** One-stop access to capabilities like text generation, image analysis, summarization, and more.
 - **Modular Frontend & Backend:** Easily scalable architecture.
 - **Pluggable AI Integrations:** Add or swap AI models and services as needed.
 - **User Authentication:** Optional support for secure user accounts (if implemented).
@@ -60,9 +60,9 @@ Example:
 └─────────────┘                        └──────────────┘
 ```
 
-- **Client**: Single-page app built with React.js for user interaction.
+- **Client**: Multi-page app built with React.js for user interaction.
 - **Server**: Node.js backend exposes REST APIs to connect client and AI models/services.
-- *Optional persistent database layer for storing user data or logs.*
+- *PostgreSQL For database Storage*
 
 ***
 
@@ -110,12 +110,15 @@ OneStopAI/
 │   └── src/
 │       ├── components/
 │       ├── pages/
-│       └── utils/
+│       └── Assets/
+        ├── App.jsx
+        ├── main.jsx
 ├── server/          # Backend (Node.js)
 │   ├── controllers/
 │   ├── routes/
-│   ├── services/
-│   └── config/
+│   ├── middlewares/
+│   └── configs/
+├── server.js
 ├── .gitignore
 ├── README.md
 └── package.json
@@ -131,14 +134,28 @@ OneStopAI/
 
      Example for `server/.env`:
      ```
-     PORT=4000
-     OPENAI_API_KEY=sk-xxxxxxxxxxxx
-     JWT_SECRET=your_jwt_secret
-     DB_CONN_STRING=your_database_uri
+      DATABASE_URL=
+
+      #Clerk Auth
+      CLERK_PUBLISHABLE_KEY=
+      CLERK_SECRET_KEY=
+
+      #Google Gemini
+      GEMINI_API_KEY=
+
+     #Clipdrop
+      CLIPDROP_API_KEY=
+
+      #Cloudinary
+      CLOUDINARY_CLOUD_NAME=
+      CLOUDINARY_API_KEY=
+      CLOUDINARY_API_SECRET=
+
+      CORS_ORIGIN=
      ```
 
 2. **API Keys & Secrets**
-   - Store your AI API credentials (e.g., OpenAI) securely in environment files.
+   - Store your AI API credentials (e.g., Google-OpenAI) securely in environment files.
 
 3. **Client Configuration**
    - Configure API endpoint URLs as needed, possibly in `.env` or config files.
@@ -153,34 +170,6 @@ From within the `client` or `server` directory:
 - `npm start` or `npm run dev` — Start development server
 - `npm run build` (client) — Build for production
 
-***
-
-## 📑 API Endpoints
-
-_Examples (customize according to your implementation):_
-
-- `POST /api/generate-text` — Generate text with an AI model
-- `POST /api/analyze-image` — Run image classification or analysis
-- `POST /api/ask-chatbot` — Conversational AI endpoint
-- `GET  /api/models` — List supported AI models
-
-**Sample Request:**
-```json
-{
-  "prompt": "Summarize the following article...",
-  "model": "gpt-3.5-turbo"
-}
-```
-
-**Sample Response:**
-```json
-{
-  "result": "This article is about..."
-}
-```
-
-***
-
 ## 🤝 Contributing
 
 Your contributions are welcome!
@@ -191,13 +180,11 @@ Your contributions are welcome!
 4. **Push** to the branch: `git push origin feature/feature-name`
 5. **Open** a Pull Request.
 
-(See [CONTRIBUTING.md] if present for details.)
-
 ***
 
 ## 📝 License
 
-Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Licensed under the MIT License.
 
 ***
 
@@ -212,5 +199,3 @@ Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 Tailor the feature list, endpoints, and architectural notes to provide rich, accurate documentation for future users and contributors!
 
 ***
-
-Let me know if you want to add badges, further usage examples, or any additional sections.
