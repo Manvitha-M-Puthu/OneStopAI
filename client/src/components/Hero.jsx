@@ -53,11 +53,6 @@ const Hero = () => {
             </div>
             
             <div className='relative z-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 mt-12 text-gray-600'>
-                <div className='flex items-center gap-3'>
-                    <img src={assets.user_group} alt="Users" className='h-8 w-8 opacity-80'/>
-                    <span className='text-sm sm:text-base font-medium'>Trusted by 10k+ creators</span>
-                </div>
-                
                 <div className='flex items-center gap-2 text-yellow-500'>
                     <span className='text-gray-600 text-sm ml-1'>4.9/5 rating</span>
                 </div>
