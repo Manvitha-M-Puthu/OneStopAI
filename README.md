@@ -190,10 +190,3 @@ Licensed under the MIT License.
 
 - Inspired by advancements in AI, powered by APIs like [OpenAI], [Hugging Face], and others as integrated.
 - Special thanks to contributors and the open-source community!
-
-***
-
-**Tip:**  
-Tailor the feature list, endpoints, and architectural notes to provide rich, accurate documentation for future users and contributors!
-
-***
